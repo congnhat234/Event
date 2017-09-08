@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Event</string>
+    <string name="title">Các kiểu lập trình sự kiện</string>
+    <string name="edt_a">Số a:</string>
+    <string name="edt_b">Số b:</string>
+    <string name="result">Tổng 2 số</string>
+    <string name="btn2">Tổng (Anonymous listener)</string>
+    <string name="btn3">Tổng (Activity is listener)</string>
+</resources>

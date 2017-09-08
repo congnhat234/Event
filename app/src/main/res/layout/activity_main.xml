@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.gameloft.congnhat.event.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large"
+        android:textAlignment="center"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title" />
+    <LinearLayout
+        android:id="@+id/edt_texta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/soa"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_small"
+            android:padding="@dimen/text_padding"
+            android:layout_marginTop="@dimen/edt_margin_top"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/edt_a" />
+
+        <EditText
+            android:id="@+id/edt_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edt_margin_top"
+            android:drawableBottom="@color/colorBlack"
+            android:padding="@dimen/text_padding"
+            android:layout_marginRight="@dimen/edt_margin_right"
+            android:textColor="@color/colorBlack"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edt_textb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sob"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_small"
+            android:padding="@dimen/text_padding"
+            android:layout_marginTop="@dimen/edt_margin_top"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/edt_b" />
+
+        <EditText
+            android:id="@+id/edt_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edt_margin_top"
+            android:drawableBottom="@color/colorBlack"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/edt_margin_right"
+            android:padding="@dimen/text_padding"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/result"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:background="@color/colorGreen"/>
+    <Button
+        android:id="@+id/btntong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:text="@string/result"
+        android:onClick="btn_tong"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:text="@string/btn2" />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:text="@string/btn3"
+        android:onClick="btn_tong"/>
+
+</LinearLayout>
+
