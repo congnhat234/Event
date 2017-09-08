@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 TextView result = (TextView) findViewById(R.id.result);
                 result.setText(a + b + "");
             } else {
-                Toast.makeText(MainActivity.this, "Vui lòng nhập số!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Bạn chưa nhập số!", Toast.LENGTH_SHORT).show();
             }
     }
 
@@ -58,7 +58,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             TextView result = (TextView) findViewById(R.id.result);
             result.setText(a + b + "");
         } else {
-            Toast.makeText(MainActivity.this, "Vui lòng nhập số!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Bạn chưa nhập số!", Toast.LENGTH_SHORT).show();
         }
     }
 }
