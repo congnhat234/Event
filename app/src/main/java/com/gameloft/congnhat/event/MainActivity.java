@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -20,11 +21,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
             @Override
             public void onClick (View arg0){
                 EditText edtA = (EditText)findViewById(R.id.edt_a);
-                int a = Integer.parseInt(edtA.getText() + "");
                 EditText edtB = (EditText)findViewById(R.id.edt_b);
-                int b = Integer.parseInt(edtB.getText() + "");
-                TextView result = (TextView) findViewById(R.id.result);
-                result.setText(a + b + "");
+                if(!edtA.getText().toString().isEmpty() && !edtB.getText().toString().isEmpty()){
+                    int a = Integer.parseInt(edtA.getText() + "");
+                    int b = Integer.parseInt(edtB.getText() + "");
+                    TextView result = (TextView) findViewById(R.id.result);
+                    result.setText(a + b + "");
+                } else {
+                    Toast.makeText(MainActivity.this, "Vui lòng nhập số!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         Button btn3 = (Button) findViewById(R.id.btn3);
@@ -32,20 +37,28 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
         public void btn_tong(View v){
             EditText edtA = (EditText)findViewById(R.id.edt_a);
-            int a = Integer.parseInt(edtA.getText() + "");
             EditText edtB = (EditText)findViewById(R.id.edt_b);
-            int b = Integer.parseInt(edtB.getText() + "");
-            TextView result = (TextView) findViewById(R.id.result);
-            result.setText(a + b + "");
+            if(!edtA.getText().toString().isEmpty() && !edtB.getText().toString().isEmpty()){
+                int a = Integer.parseInt(edtA.getText() + "");
+                int b = Integer.parseInt(edtB.getText() + "");
+                TextView result = (TextView) findViewById(R.id.result);
+                result.setText(a + b + "");
+            } else {
+                Toast.makeText(MainActivity.this, "Vui lòng nhập số!", Toast.LENGTH_SHORT).show();
+            }
     }
 
     @Override
     public void onClick(View view) {
         EditText edtA = (EditText)findViewById(R.id.edt_a);
-        int a = Integer.parseInt(edtA.getText() + "");
         EditText edtB = (EditText)findViewById(R.id.edt_b);
-        int b = Integer.parseInt(edtB.getText() + "");
-        TextView result = (TextView) findViewById(R.id.result);
-        result.setText(a + b + "");
+        if(!edtA.getText().toString().isEmpty() && !edtB.getText().toString().isEmpty()){
+            int a = Integer.parseInt(edtA.getText() + "");
+            int b = Integer.parseInt(edtB.getText() + "");
+            TextView result = (TextView) findViewById(R.id.result);
+            result.setText(a + b + "");
+        } else {
+            Toast.makeText(MainActivity.this, "Vui lòng nhập số!", Toast.LENGTH_SHORT).show();
+        }
     }
 }
